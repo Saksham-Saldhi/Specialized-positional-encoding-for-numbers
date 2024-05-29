@@ -10,8 +10,8 @@ import torch
 # !pip show accelerate
 # torch.cuda.empty_cache()
 # Load the DROP dataset
-train_dataset = load_dataset("ucinlp/drop", split="train[:2%]") #Initially only load 10% of the data, when everything works, please remove [:10%]
-validation_dataset = load_dataset("ucinlp/drop", split="validation[:2%]")
+train_dataset = load_dataset("ucinlp/drop", split="train[:10%]") #Initially only load 10% of the data, when everything works, please remove [:10%]
+validation_dataset = load_dataset("ucinlp/drop", split="validation[:10%]")
 
 #------------------
 # Load model directly
